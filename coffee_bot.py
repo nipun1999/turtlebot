@@ -294,6 +294,7 @@ if __name__ == '__main__':
     delivery_checks = 0 #just for troubleshooting to see how many times we called the server to check for pending coffee
     try:
         coffebot = turtlebot_coffee()
+		#testing github dont take me wrong
         #keep checking for deliver_coffee until we shutdown the script with ctrl + c
 	while(coffebot.deliver_coffee() and not rospy.is_shutdown()):
                 delivery_checks = delivery_checks + 1
